@@ -22,5 +22,16 @@
         line-height: 1.15;
         color: #FFA5BA;
     }
-
+}
+.modal-sing {
+    
+    &-input {
+        width: 100%;
+        height: 40px;
+    }
+    &-svg {
+        width: 18px;
+        height: 18px;
+        fill: #FEA5BB;
+    }
 }
