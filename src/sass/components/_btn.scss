@@ -1,0 +1,14 @@
+.btn {
+    &-submit {
+        width: 60px;
+        height: 60px;
+        border-radius: 30%;
+        background-color: #D41443;
+
+    }
+    &-svg {
+        width: 25px;
+        height: 25px;
+        fill: white;
+    }
+}
