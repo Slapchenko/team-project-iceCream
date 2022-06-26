@@ -33,44 +33,61 @@
     </main>
 
     <include src="./partials/footer.html"></include>
-    <section class="modal-application">
-      <button type="button" class="btn-modal">
-        <svg class="modal-svg">
-          <use href="./images/modal/sprite.svg#icon-close-black"></use>
-        </svg>
-      </button>
-      <div class="modal-application-container">        
-        <h2 class="modal-application-title" >Shopping cart</h2>
-        <div class="modal-application-name">
-          <svg class="modal-application-logo">
-            <use href="./images/modal/sprite.svg#icon-logo-single"></use>
+    <section class="modal-application ">
+      
+      <div class="modal-application-container"> 
+        <button type="button" class="btn-modal">
+          <svg class="modal-svg">
+            <use href="./images/modal/sprite.svg#icon-close-black"></use>
           </svg>
-          <p class="modal-application-text">Iсecreme.</p>
-        </div>        
-        <form >
-          <div class="modal-number">
-            <label for="" class="modal-number-food"> Name
-              <input type="text" class="modal-number-input">
-            </label>
-            <label class="modal-number-quantity " for="quantity">Quantity
-              <div>
-                <button class="btn-number" type="button">+</button>
-                <input class="modal-number-input" type="text" name="quantity" id="quantity">
-                <button class="btn-number" type="button">-</button>
-              </div>
-            </label>
-            <label class="modal-number-total" for="total">Total
-              <input class="modal-number-input" type="text" name="total">
-            </label>
-          </div>
+        </button>
+        <h2 class="modal-application-title" >Shopping cart</h2>
+        <svg class="modal-application-logo">
+          <use href="./images/modal/sprite.svg#icon-logo-group"></use>
+        </svg>
+        <div class="modal-application-name">
           
+          
+        </div>        
+        <form class="modal-number" >
+          <label for="" class="modal-number-food"> Name ice creme
+            <input type="text" class="modal-number-name">
+          </label>
           <div class="modal-enter">
             
-          <button type="submit" class="btn-submit"><svg class="btn-svg"><use href="./images/modal/sprite.svg#icon-right-arrow"></use></svg></button>
-          
-          
-        </form>       
+            <label class="modal-enter-quantity " for="quantity">Quantity
+            <div class="modal">
+              <button class="btn-enter" type="button">+</button>
+              <input class="modal-enter-input" type="text" name="quantity" id="quantity">
+              <button class="btn-enter" type="button">-</button>
+            </div>
+            </label>
+            
+            <label class="modal-enter-total" for="total">Total
+              <input class="modal-enter-count" type="text" name="total">
+            </label>
+          </div>                   
+        </form>
+        
+          <div class="payment">
+            <svg class="payment-svg">
+              <use href="./images/modal/sprite.svg#icon-visa"></use>
+            </svg>
+            <svg class="payment-svg">
+              <use href="./images/modal/sprite.svg#icon-mastercard"></use>
+            </svg>
+            
+          </div>
+          <label for="pay" class="payment-label">To pay without delivery
+            <input type="text" class="payment-input" name="pay">
+          </label>
+          <div>
+            <button type="submit" class="btn-submit">Checkout</button>
+            <button type="submit" class="btn-сontinue">Сontinue shopping</button>
+          </div>
       </div>
+     
+      
     </section>
 
     <!--  ?Add JS script -->
