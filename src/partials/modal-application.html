@@ -1,8 +1,7 @@
 <section class="modal-application ">
-
     <div class="modal-application-container">
         <button type="button" class="btn-modal">
-            <svg class="modal-svg">
+            <svg class="btn-modal-svg">
                 <use href="./images/modal/sprite.svg#icon-close-black"></use>
             </svg>
         </button>
@@ -10,16 +9,22 @@
         <svg class="modal-application-logo">
             <use href="./images/modal/sprite.svg#icon-logo-group"></use>
         </svg>
-        <div class="modal-application-name">
-        </div>
+        <!--<div class="modal-application-name">
+                        </div>-->
         <form class="modal-number">
-            <label for="" class="modal-number-food"> Name ice cream
+            <label for="fio" class="modal-number-fio"> Name
+                <input type="text" class="modal-number-name" name="fio">
+            </label>
+            <label for="tel" class="modal-number-tel"> Phone
+                <input type="text" class="modal-number-name" name="tel">
+            </label>
+            <label for="" class="modal-number-food"> Choose your product
                 <input type="text" class="modal-number-name">
             </label>
             <div class="modal-enter">
 
                 <label class="modal-enter-quantity " for="quantity">Quantity
-                    <div class="modal">
+                    <div class="quantity">
                         <button class="btn-enter" type="button">+</button>
                         <input class="modal-enter-input" type="text" name="quantity" id="quantity">
                         <button class="btn-enter" type="button">-</button>
@@ -31,21 +36,36 @@
                 </label>
             </div>
         </form>
-        <div class="payment">
-            <svg class="payment-svg">
-                <use href="./images/modal/sprite.svg#icon-visa"></use>
-            </svg>
-            <svg class="payment-svg">
-                <use href="./images/modal/sprite.svg#icon-mastercard"></use>
-            </svg>
-        </div>
-        <label for="pay" class="payment-label">To pay without delivery
-            <input type="text" class="payment-input" name="pay">
+        <p class="modal-enter-text">Do you have any allergies?</p>
+        <label class="modal-enter-btn">
+            <input type="radio" name="yes" value="red" checked />
+            Yes
         </label>
-        <div>
-            <button type="submit" class="btn-submit">Checkout</button>
-            <button type="submit" class="btn-сontinue">Сontinue shopping</button>
-        </div>
+        <label class="modal-enter-btn">
+            <input type="radio" name="no" value="white" />
+            No
+        </label>
+        <label class="modal-name" for="coment">Any wishes?</label>
+        <textarea name="coment" id="coment" cols="30" rows="10" class="modal-name-comment"
+            placeholder="Type your text"></textarea>
+
+        <label class="checkbox-label">
+
+            <div class="payment">
+                <svg class="payment-svg">
+                    <use href="./images/modal/sprite.svg#icon-visa"></use>
+                </svg>
+                <svg class="payment-svg">
+                    <use href="./images/modal/sprite.svg#icon-mastercard"></use>
+                </svg>
+            </div>
+            <label for="pay" class="payment-label">To pay without delivery
+                <input type="text" class="payment-input" name="pay">
+            </label>
+            <div>
+                <button type="submit" class="btn-submit">Checkout</button>
+                <button type="submit" class="btn-сontinue">Сontinue shopping</button>
+            </div>
     </div>
 
 
