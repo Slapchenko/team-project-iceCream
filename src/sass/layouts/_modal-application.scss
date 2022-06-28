@@ -37,9 +37,15 @@
         height: 98vh;
         margin-left: auto;
         margin-right: auto;
-
+        @media screen and (min-width: 450px) {
+            width: 450px;
+            height: 640px;
+        }
+         @media screen and (min-width: 767px) {
+            width: 528px;
+            height: 680px;
+        }
     }
-
     &-title {
         margin: 0;
         padding-bottom: 5px;
@@ -87,7 +93,9 @@
 
         border: 1px solid rgba(33, 33, 33, 0.2);
         padding: 0;
+       
     }
+
 
     &-name {
         width: 100%;
@@ -96,12 +104,17 @@
         padding: 5px 25px;
 
         border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 6px;
         
         font-weight: 400;
         font-size: 10px;
         line-height: 1.2;
 
         color: #D41443;
+        @media screen and (min-width: 767px) {
+            width: 80%;
+                height: 35px;
+        }
 
     }
 
@@ -111,6 +124,11 @@
         font-size: 12px;
         line-height: 1.2;
         color: #D41443;
+        @media screen and (min-width: 767px) {
+            display: flex;
+            flex-direction: column;
+
+        }
     }
 
     &-tel {
@@ -119,6 +137,11 @@
         font-size: 12px;
         line-height: 1.2;
         color: #D41443;
+        @media screen and (min-width: 767px) {
+                display: flex;
+                flex-direction: column;
+        
+            }
     }
         &-card {
             position: absolute;
@@ -136,7 +159,7 @@
             &-phone {
                 position: absolute;
                 display: flex;
-                top: 55%;
+                top: 50%;
                 left: 8px;
         
                 width: 18px;
@@ -174,6 +197,7 @@
 
 .modal-enter {
     display: flex;
+    align-items: baseline;
     margin-bottom: 5px;
 
     &-input {
@@ -188,6 +212,10 @@
         line-height: 1.2;
 
         color: #D41443;
+        @media screen and (min-width: 767px) {
+               
+                height: 35px;
+            }
     }
 
     &-count {
@@ -201,17 +229,20 @@
         color: #D41443;
 
         border: 1px solid rgba(33, 33, 33, 0.2);
+        @media screen and (min-width: 767px) {        
+                height: 35px;
+            }
 
     }
     
     &-quantity {
         display: flex;
-        flex-direction: column;
         align-items: center;
+        justify-content: center;
         margin-right: 10px;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 2.0;
+        font-weight: 500;
+            font-size: 14px;
+            line-height: 1.2;
         color: #D41443;
     }
 
@@ -242,7 +273,8 @@
 }
 
 .quantity {
-    display: flex;
+    
+    align-items: center;
 
 }
 
@@ -280,14 +312,18 @@
     }
 }
 
-.payment {
-    display: flex;   
-    margin-bottom: 5px;
+.payment {  
+    &-btn {
+    @media screen and (min-width: 767px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    } 
     &-svg {       
         height: 20px;
         width: 32px
     }
-
     &-label {
         display: flex;
         flex-direction: column;
@@ -298,18 +334,22 @@
         line-height: 2.0;
         color: #D41443;
     }
-
     &-input {
         width: 100%;
         height: 25px;
         margin-top: 5px;
         padding: 0;
         border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 6px;
 
-        font-weight: 700;
+        font-weight: 500;
         font-size: 14px;
-        line-height: 2.0;
+        line-height: 1.2;
         color: #D41443;
+        @media screen and (min-width: 767px) {
+            width: 80%;
+            height: 40px;
+            }
 
     }
 }

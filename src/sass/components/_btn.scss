@@ -26,9 +26,12 @@
         width: 25px;
         height: 25px;
         padding: 0;
-
+        @media screen and (min-width: 767px) {
+            width: 35px;
+            height: 35px;
+        
+        }
     }
-
     &-submit {
         width: 100%;
         height: 40px;
@@ -49,9 +52,15 @@
             color: #D41443;
             background: #ECEBEB;
         }
+          @media screen and (min-width: 767px) {
+            width: 80%;
+            height: 50px;
+            margin-left: auto;
+            margin-right: auto;
+        
+        }
 
     }
-
     &-сontinue {
         width: 100%;
         height: 40px;
@@ -71,15 +80,19 @@
             color: #D41443;
             background: #ECEBEB;
         }
-
+         @media screen and (min-width: 767px) {
+            width: 80%;
+            height: 50px;
+            margin-left: auto;
+            margin-right: auto;
+        
+        }
     }
-
     &-svg {
         width: 25px;
         height: 25px;
-        fill: white;
+        fill: white;       
     }
-
     &-modal-svg {
         width: 18px;
         height: 18px;
