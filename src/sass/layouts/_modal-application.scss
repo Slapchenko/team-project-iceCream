@@ -92,19 +92,17 @@
         padding-left: 25px;
 
         border: 1px solid rgba(33, 33, 33, 0.2);
-        padding: 0;
-       
+        padding: 0;       
     }
-
-
     &-name {
+       
         width: 100%;
-        height: 25px;
+        height: 40px;
         margin-bottom: 5px;
         padding: 5px 25px;
 
         border: 1px solid rgba(33, 33, 33, 0.2);
-        border-radius: 6px;
+        border-radius: 10px;
         
         font-weight: 400;
         font-size: 10px;
@@ -119,7 +117,7 @@
     }
 
     &-fio {
-        position: relative;
+        position: relative;       
         font-weight: 400;
         font-size: 12px;
         line-height: 1.2;
@@ -127,30 +125,16 @@
         @media screen and (min-width: 767px) {
             display: flex;
             flex-direction: column;
-
         }
-    }
-
-    &-tel {
-        position: relative;
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 1.2;
-        color: #D41443;
-        @media screen and (min-width: 767px) {
-                display: flex;
-                flex-direction: column;
-        
-            }
-    }
+    } 
         &-card {
             position: absolute;
             display: flex;
             top: 35%;
-            left: 8px;
+            left: 15px;
     
-            width: 18px;
-            height: 18px;
+            width: 22px;
+            height: 22px;
             border: 2px black;
             transition: fill 250ms $timing-function;
     
@@ -159,11 +143,11 @@
             &-phone {
                 position: absolute;
                 display: flex;
-                top: 50%;
-                left: 8px;
+                top: 20%;
+                left: 15px;
         
-                width: 18px;
-                height: 18px;
+                width: 22px;
+                height: 22px;
                 border: 2px black;
                 transition: fill 250ms $timing-function;
         
@@ -194,7 +178,9 @@
 
     }
 }
-
+.fio {
+position: relative;
+}
 .modal-enter {
     display: flex;
     align-items: baseline;
