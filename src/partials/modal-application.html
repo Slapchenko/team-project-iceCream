@@ -9,8 +9,7 @@
         <svg class="modal-application-logo">
             <use href="./images/modal/sprite.svg#icon-logo-group"></use>
         </svg>
-        <!--<div class="modal-application-name">
-                        </div>-->
+       
         <form class="modal-number">
             <label for="fio" class="modal-number-fio"> Name
                 <input type="text" class="modal-number-name" name="fio" id="fio">
@@ -28,46 +27,45 @@
                 <input type="text" class="modal-number-name" name="food" id="food">
             </label>
             <div class="modal-enter">
-
-                <label class="modal-enter-quantity " for="quantity">Quantity
-                    <div class="quantity">
-                        <button class="btn-enter" type="button">+</button>
-                        <input class="modal-enter-input" type="text" name="quantity" id="quantity">
-                        <button class="btn-enter" type="button">-</button>
-                    </div>
+                <div class="quantity">
+                <label class="modal-enter-quantity " for="quantity">Quantity                    
                 </label>
-
+                <button class="btn-enter" type="button">+</button>
+                <input class="modal-enter-input" type="text" name="quantity" id="quantity">
+                <button class="btn-enter" type="button">-</button>
+                </div>
                 <label class="modal-enter-total" for="total">Total
-                    <input class="modal-enter-count" type="text" name="total">
+                    <input class="modal-enter-count" type="text" name="total" id="total">
                 </label>
             </div>
         </form>
         <p class="modal-enter-text">Do you have any allergies?</p>
-        <label class="modal-enter-btn">
-            <input type="radio" name="yes" value="red" checked />
+        <input type="radio" name="yes" value="red" id="yes" checked />
+        <label class="modal-enter-btn" for="yes">        
             Yes
         </label>
-        <label class="modal-enter-btn">
-            <input type="radio" name="no" value="white" />
+        <input type="radio" name="no" value="white" id="no" />
+        <label class="modal-enter-btn" for="no">           
             No
         </label>
         <label class="modal-name" for="coment">Any wishes?</label>
         <textarea name="coment" id="coment" cols="30" rows="10" class="modal-name-comment"
             placeholder="Type your text"></textarea>
-
+        <div class="payment">
         <label class="checkbox-label">
-
-            <div class="payment">
-                <svg class="payment-svg">
-                    <use href="./images/modal/sprite.svg#icon-visa"></use>
-                </svg>
-                <svg class="payment-svg">
-                    <use href="./images/modal/sprite.svg#icon-mastercard"></use>
-                </svg>
-            </div>
+            <svg class="payment-svg">
+                <use href="./images/modal/sprite.svg#icon-visa"></use>
+            </svg>
+            <svg class="payment-svg">
+                <use href="./images/modal/sprite.svg#icon-mastercard"></use>
+            </svg>
+            </label>       
+        
             <label for="pay" class="payment-label">To pay without delivery
-                <input type="text" class="payment-input" name="pay">
+                <input type="text" class="payment-input" name="pay" id="pay">
             </label>
+        </div>
+        
             <div>
                 <button type="submit" class="btn-submit">Checkout</button>
                 <button type="submit" class="btn-сontinue">Сontinue shopping</button>
